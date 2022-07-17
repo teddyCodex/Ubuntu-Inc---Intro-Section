@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+
+  <body>
+    <div id="overlay" class="overlay hidden"></div>
+    <div class="container">
+      <header id="header">
+        <div id="logo" class="logo">
+          <h1><a href="#">Ubuntu Inc.</a></h1>
+        </div>
+        <div id="navigation">
+          <div class="menu-toggle" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div id="sidenav" class="sidenav active">
+            <ul class="nav-items">
+              <li id="features" class="dropbtn">
+                <span>Features</span
+                ><i class="fa-solid fa-angle-down fa-sm"></i>
+                <ul class="dropdown features hidden">
+                  <li>
+                    <div class="dropdown-items">
+                      <img src="images/icon-todo.svg" alt="" />
+                      <a href="#">ToDo List</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-items">
+                      <img src="images/icon-calendar.svg" alt="" />
+                      <a href="#">Calendar</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-items">
+                      <img src="images/icon-reminders.svg" alt="" />
+                      <a href="#">Reminders</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-items">
+                      <img src="images/icon-planning.svg" alt="" />
+                      <a href="#">Planning</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li id="company" class="dropbtn">
+                <span>Company</span>
+                <i class="fa-solid fa-angle-down fa-sm"></i>
+                <ul class="dropdown company hidden">
+                  <li>
+                    <a href="#">History</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="careers"><a href="#contact">Careers</a></li>
+              <li id="about"><a href="#contact">About</a></li>
+            </ul>
+            <ul class="account-access">
+              <li>
+                <button id="login-btn">Login</button>
+              </li>
+              <li>
+                <button id="register-btn">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main id="main-content">
+        <section class="background-image">
+          <img class="bg-img-1" src="images/image-hero-mobile.png" alt="" />
+          <img class="bg-img-2" src="images/image-hero-desktop.png" alt="" />
+        </section>
+        <section class="main-section">
+          <h2>
+            <pre>
+Make
+remote work</pre
+            >
+          </h2>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div class="learn-more">
+            <button>Learn more</button>
+          </div>
+          <section class="partners">
+            <div>
+              <img src="images/client-databiz.svg" alt="" />
+              <img src="images/client-audiophile.svg" alt="" />
+              <img src="images/client-maker.svg" alt="" />
+              <img src="images/client-meet.svg" alt="" />
+            </div>
+          </section>
+        </section>
+      </main>
+      <!-- <section class="partners">
+        <img src="images/client-databiz.svg" alt="" />
+        <img src="images/client-audiophile.svg" alt="" />
+        <img src="images/client-maker.svg" alt="" />
+        <img src="images/client-meet.svg" alt="" />
+      </section> -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
